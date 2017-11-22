@@ -2,6 +2,8 @@
 ----
 A simple implementation of Materializecss Grid System using Polymer Elements
 
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/owner/my-element)
+
 ## Install 
 
     bower i --save materialize-grid-system
