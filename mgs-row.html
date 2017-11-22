@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="mgs-row">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      .row.no-margin{margin-bottom: 0;}.row{margin-left:auto;margin-right:auto;margin-bottom:20px}.row:after{content:"";display:table;clear:both}
+    </style>
+    <div class$="[[finalClass]]">
+      <slot><slot>
+    </div>
+  </template>
+  <script>
+    class MGSRow extends Polymer.Element {
+      static get is() {return 'mgs-row'};
+      static get properties() {
+        return {
+          finalClass: {
+            type: String,
+            value: "row"
+          }
+        }
+      }
+      static get observers() {
+        return [
+          '_createClass(noMargin)'
+        ]
+      }
+      _createClass(noMargin) {
+        if(noMargin != undefined) this.set('finalClass',"row no-margin");
+      }
+    }
+
+    window.customElements.define(MGSRow.is, MGSRow);
+  </script>
+</dom-module>
