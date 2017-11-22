@@ -25,4 +25,12 @@ The Materialize Grid System is based on a 12-column grid and uses 4 screen measu
 - L (Large) Small size PC recomended
 - XL (Extra Large) Large size PC recomended
 
+### Using with properties
+
+    <mgs-row>
+      <mgs-col s="12" m="3">col s12 m3</mgs-col>
+      <mgs-col s="12" m="3" l="4">col s12 m3 l4</mgs-col>
+      <mgs-col s="12" m="3" l="4" xl="6">col s12 m3</mgs-col>
+    </mgs-row>
+
 
