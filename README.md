@@ -6,7 +6,7 @@ A simple implementation of Materializecss Grid System using Polymer Elements
 
 ## Install 
 
-    bower i --save materialize-grid-system
+    bower install --save aaroncadillac/materialize-grid-system
 
 ## Usage 
 
